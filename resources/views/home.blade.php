@@ -16,9 +16,10 @@
 
                     <form>
                         <table class="table">
+                            <label for="exampleInputEmail1">Cantidad de camas:</label>
                             <thead>
                                 <tr>
-                                    <th scope="col">Cantidad de camas</th>
+                                    <th scope="col"></th>
                                     <th scope="col">Individuales</th>
                                     <th scope="col">Dobles</th>
                                     <th scope="col">Queen/King</th>
@@ -46,6 +47,22 @@
                             </tbody>
                         </table>
 
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="piso">¿En que planta están las Habitaciones?</label>
+                                <input type="text" class="form-control form-control-sm" id="piso" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="requisitos">Requisito de Huéspedes</label>
+                                <select class="form-control form-control-sm">
+                                    <option selected>Seleccionar</option>
+                                    <option value="1">Sólo Mujeres</option>
+                                    <option value="2">Sólo hombres</option>
+                                    <option value="3">Matrimonio con hijos</option>
+                                    <option value="4">Matrimonio sin hijos</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre de anfitrión</label>
                             <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -81,11 +98,42 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <label for="email">Correo electrónico</label>
                                 <input type="text" class="form-control form-control-sm" id="email">
                             </div>
+                            <div class="col-sm-6">
+                                <label for="condicion">Condiciones de las habitaciones</label>
+                                <select class="form-control form-control-sm">
+                                    <option selected>Seleccionar</option>
+                                    <option value="1">Excelente</option>
+                                    <option value="2">Buena</option>
+                                    <option value="3">Regular</option>
+                                </select>
+                            </div>
                         </div>
+
+                        <div class="form-group row text-info">
+                            <div class="col-sm-6">
+                                <label for="secretario">Secretario</label>
+                                <input type="text" class="form-control form-control-sm" id="secretario">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email2">Correo electrónico</label>
+                                <input type="email" class="form-control form-control-sm" id="email2">
+                            </div>
+                        </div>
+                        <div class="form-group row text-info">
+                            <div class="col-sm-6">
+                                <label for="telefono1">Telefono de casa</label>
+                                <input type="text" class="form-control form-control-sm" id="telefono1">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="celular2">Celular</label>
+                                <input type="text" class="form-control form-control-sm" id="celular2">
+                            </div>
+                        </div>
+
                         <div class="form-group">
                                 <label for="email">Observaciones</label>
                                 <textarea name="area" id="" cols="30" rows="4" class= "form-control form-control-sm"></textarea>
