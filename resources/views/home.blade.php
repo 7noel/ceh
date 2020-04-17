@@ -69,8 +69,8 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-8">
-                                <label for="exampleInputPassword1">Dirección</label>
-                                <input type="text" class="form-control form-control-sm" id="exampleInputPassword1">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" class="form-control form-control-sm" id="direccion">
                             </div>
                             <div class="col-sm-4">
                                 <label for="dpto">Nro de dpto</label>
