@@ -114,6 +114,12 @@
                         </div>
 
                         <div class="form-group row text-info">
+                            <div class="col-sm-12">
+                                <label for="congregacion">Congregación:</label>
+                                <input type="text" class="form-control form-control-sm" id="congregacion">
+                            </div>
+                        </div>
+                        <div class="form-group row text-info">
                             <div class="col-sm-6">
                                 <label for="secretario">Secretario</label>
                                 <input type="text" class="form-control form-control-sm" id="secretario">
