@@ -26,7 +26,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Primera Habitacion</td>
+                                    <td>Primera Habitación</td>
                                     <td><input type="number" class="form-control form-control-sm" id="dpto"></td>
                                     <td><input type="number" class="form-control form-control-sm" id="dpto"></td>
                                     <td><input type="number" class="form-control form-control-sm" id="dpto"></td>
