@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'is_superuser',
     ];
 
     /**
@@ -36,4 +36,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function setPasswordAttribute($value){
+        if (!empty($value)) {
+            if (\Hash::needsRehash($value)){
+                $this->attributes['password'] = \Hash::make($value);
+            }
+        }
+    }
+
+    public function scopeName($query, $name){
+        if (trim($name) != "") {
+            $query->where('name', 'LIKE', "%$name%");
+        }
+    }
 }

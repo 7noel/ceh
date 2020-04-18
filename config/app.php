@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //View Composer for share routes, views and labels
+        App\Providers\ComposerServiceProvider::class,
+
     ],
 
     /*

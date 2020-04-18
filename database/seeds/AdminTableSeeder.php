@@ -14,7 +14,7 @@ class AdminTableSeeder extends Seeder {
     {
         $faker = Faker::create();
 
-        // User::create(['name' => 'Noel', 'email' => 'noel.logan@gmail.com', 'password' => '123', 'is_superuser' => true]);
+        User::create(['name' => 'Noel', 'email' => 'noel.logan@gmail.com', 'password' => '123', 'is_superuser' => true]);
 
 		Person::create(['nombre' => 'Carlos Alberto', 'apaterno' => 'Takeshita', 'amaterno' => 'Nishimura', 'full_name' => 'Takeshita Nishimura Carlos Alberto', 'tipo' => 'CEH', 'phone' => '985595985', 'congregacion' => '', 'HLC' => '' , 'email_jw' => 'CTakeshita@jwpub.org', 'is_new' => '', 'ceh_id' => 0, 'ceh2_id' => 0]);
 		Person::create(['nombre' => 'Fabricio', 'apaterno' => 'Hinojosa', 'amaterno' => '', 'full_name' => 'Hinojosa Fabricio', 'tipo' => 'CEH', 'phone' => '997930827', 'congregacion' => '', 'HLC' => '' , 'email_jw' => 'FabricioH@jwpub.org', 'email' => '', 'is_new' => '', 'ceh_id' => 0, 'ceh2_id' => 0]);
@@ -153,6 +153,7 @@ class AdminTableSeeder extends Seeder {
 
 		$r = Hospital::create(['nombre' => 'Clínica Anglo Americana', 'tipo' => 'CLINICA', 'alias' => 'CLINICA - ANGLO AMERICANA', 'clase' => '-', 'prioridad' => 'B']);
 		$r->peaple()->sync([5, 80]);
+		
 		$r = Hospital::create(['nombre' => 'Clínica Avendaño', 'tipo' => 'CLINICA', 'alias' => 'CLINICA - AVENDAÑO', 'clase' => '-', 'prioridad' => 'B']);
 		$r->peaple()->sync([1, 36]);
 		$r = Hospital::create(['nombre' => 'Clínica Bellavista AUNA', 'tipo' => 'CLINICA', 'alias' => 'CLINICA - BELLAVISTA AUNA', 'clase' => '-', 'prioridad' => 'B']);

@@ -20,6 +20,7 @@ class CreateHospitalsTable extends Migration
             $table->string('tipo')->nullable();
             $table->string('clase')->nullable();
             $table->string('prioridad')->nullable();
+            $table->integer('group_id');
             $table->timestamps();
         });
     }
