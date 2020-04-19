@@ -28,7 +28,6 @@ class CreatePeopleTable extends Migration
             $table->string('is_new')->nullable();
             $table->integer('ceh_id');
             $table->integer('ceh2_id');
-            $table->integer('group_id');
             $table->timestamps();
         });
     }

@@ -19,8 +19,8 @@ class Person extends Model
         return $this->belongsToMany('App\Hospital');
     }
     
-	public function group()
+	public function groups()
     {
-        return $this->belongsTo('App\Group');
+        return $this->belongsToMany('App\Group');
     }
 }

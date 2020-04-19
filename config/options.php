@@ -5,6 +5,9 @@ return array(
 			'tipo' => [''=>'Seleccionar', 'GVP'=>'GVP', 'CEH'=>'CEH'],
 			'is_new' => [''=>'Seleccionar', 'N'=>'Nuevo', 'A'=>'Antiguo'],
 		],
+		'hospitals' => [
+			'prioridad' => ['' => 'Seleccionar', 'A' => 'A', 'B' => 'B'],
+		]
 	],
 	'icons' => [
 		'store' => '<i class="fas fa-store"></i>',

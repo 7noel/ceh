@@ -32,7 +32,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     {!! Html::style('//fonts.googleapis.com/css?family=Roboto:400,300') !!}
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -63,13 +64,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('hospitals.index') }}">Hospitales</a>
+                            <a class="nav-link" href="{{ route('hospitals.index') }}"><i class="fas fa-hospital"></i> Hospitales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('people.index') }}">Personal</a>
+                            <a class="nav-link" href="{{ route('people.index') }}"><i class="fas fa-hospital-user"></i> Personal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('people.index') }}">Usuarios</a>
+                            <a class="nav-link" href="{{ route('people.index') }}"><i class="fas fa-users"></i> Usuarios</a>
                         </li>
                     </ul>
                 </div>

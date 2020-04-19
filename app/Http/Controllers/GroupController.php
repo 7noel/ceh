@@ -4,12 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\User;
-use App\Person;
-use App\Hospital;
-use App\Group;
-
-class HospitalController extends Controller
+class GroupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +13,7 @@ class HospitalController extends Controller
      */
     public function index()
     {
-        $models = Hospital::name(\Request::get('name'))->paginate();
-        return view('partials.index',compact('models'));
+        //
     }
 
     /**
@@ -29,7 +23,7 @@ class HospitalController extends Controller
      */
     public function create()
     {
-        return view('partials.create');
+        //
     }
 
     /**
@@ -40,8 +34,7 @@ class HospitalController extends Controller
      */
     public function store(Request $request)
     {
-        Hospital::updateOrCreate($request->all());
-        return redirect()->route('hospitals.index');
+        //
     }
 
     /**
@@ -52,8 +45,7 @@ class HospitalController extends Controller
      */
     public function show($id)
     {
-        $model = Hospital::findOrFail($id);
-        return view('partials.show', compact('model'));
+        //
     }
 
     /**
@@ -64,8 +56,7 @@ class HospitalController extends Controller
      */
     public function edit($id)
     {
-        $model = Hospital::findOrFail($id);
-        return view('partials.edit', compact('model'));
+        //
     }
 
     /**
@@ -77,8 +68,7 @@ class HospitalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Hospital::updateOrCreate(['id'=>$id], \Request::all());
-        return redirect()->route('hospitals.index');
+        //
     }
 
     /**
@@ -89,8 +79,6 @@ class HospitalController extends Controller
      */
     public function destroy($id)
     {
-        $model = Hospital::destroy($id);
-        if (\Request::ajax()) { return $model; }
-        return redirect()->route('hospitals.index');
+        //
     }
 }

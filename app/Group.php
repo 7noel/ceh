@@ -10,7 +10,7 @@ class Group extends Model
 
 	public function people()
     {
-        return $this->hasMany('App\Person');
+        return $this->belongsToMany('App\Person');
     }
 
     public function hospitals()
