@@ -70,7 +70,7 @@
                             <a class="nav-link" href="{{ route('people.index') }}"><i class="fas fa-hospital-user"></i> Personal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/houses"><i class="fas fa-house-user"></i> Fourmularios</a>
+                            <a class="nav-link" href="/houses"><i class="fas fa-house-user"></i> Formularios</a>
                         </li>
                     </ul>
                 </div>
