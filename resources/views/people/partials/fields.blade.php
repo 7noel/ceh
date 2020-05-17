@@ -43,7 +43,7 @@
 <div class="form-group row">
 	<div class="col-sm-4">
 		{!! Form::label('is_new','Nuevo?') !!}
-		{!! Form::select('is_new', config('options.select.people.tipo'), null, ['class'=>'form-control form-control-sm']); !!}
+		{!! Form::select('is_new', config('options.select.people.is_new'), null, ['class'=>'form-control form-control-sm']); !!}
 	</div>
 	<div class="col-sm-4">
 		{!! Form::label('ceh_id','CEH Prinmcipal') !!}

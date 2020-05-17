@@ -18,9 +18,12 @@
 								<td>{{ $model->phone }} </td>
 								<td>{{ $model->email_jw }} </td>
 								<td>
-									<a href="{{ route($routes['show'] , $model) }}" class="btn btn-outline-info btn-sm" title="Ver">{!! config('options.icons.view') !!}</a>
-									<a href="{{ route($routes['edit'] , $model) }}" class="btn btn-outline-primary btn-sm" title="Editar">{!! config('options.icons.edit') !!}</a>
-									<a href="#" class="btn btn-outline-danger btn-sm" title="Eliminar">{!! config('options.icons.remove') !!}</a>
+									<div class="d-flex flex-nowrap">
+										
+										<a href="{{ route($routes['show'] , $model) }}" class="btn btn-outline-info btn-sm" title="Ver">{!! config('options.icons.view') !!}</a>
+										<a href="{{ route($routes['edit'] , $model) }}" class="btn btn-outline-primary btn-sm" title="Editar">{!! config('options.icons.edit') !!}</a>
+										<a href="#" class="btn btn-outline-danger btn-sm" title="Eliminar">{!! config('options.icons.remove') !!}</a>
+									</div>
 								</td>
 							</tr>
 							@endforeach
